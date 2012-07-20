@@ -8,24 +8,24 @@ Python library dependencies: requests, configobj
 
 You will need to create a configuration file in the same directory as the dmarc_sender.py file. For the following sample configuration file, please note the following definitions.
 
-**emails:**
+**emails:**  
 A list of emails to send test emails to. Currently, the code requires at least 2 emails.
 
-**from_email:**
+**from_email:**  
 The email you want to appear in the from feild
 
-**sX_dX:**
+**sX_dX:**  
 s = SPF, d = DKIM  
 if X = 0, fail  
 if X = 1, pass  
 
-**msg_sX_dX:**
+**msg_sX_dX:**  
 The message to include in the body of the email.  
 
-**api_user_sX_dX:**
+**api_user_sX_dX:**  
 Your SendGrid API username.  
 
-**api_key_sX_dX:**
+**api_key_sX_dX:**  
 Your SendGrid API key.  
 
 === config.ini ===
