@@ -15,18 +15,18 @@ A list of emails to send test emails to. Currently, the code requires at least 2
 The email you want to appear in the from feild
 
 **sX_dX:**
-s = SPF, d = DKIM
-if X = 0, fail
-if X = 1, pass
+s = SPF, d = DKIM  
+if X = 0, fail  
+if X = 1, pass  
 
 **msg_sX_dX:**
-The message to include in the body of the email.
+The message to include in the body of the email.  
 
 **api_user_sX_dX:**
-Your SendGrid API username.
+Your SendGrid API username.  
 
 **api_key_sX_dX:**
-Your SendGrid API key.
+Your SendGrid API key.  
 
 === config.ini ===
 
@@ -34,20 +34,20 @@ emails = 'test1@example.com', 'test2@example.com'
 
 from_email = you@yourdomain.com
 
-msg_s0d0 = "This is a test email from SendGrid.com's DMARC tester. The SPF & DKIM should fail."
-api_user_s0d0 = user
-api_key_s0d0 = pass
+msg_s0d0 = "This is a test email from SendGrid.com's DMARC tester. The SPF & DKIM should fail."  
+api_user_s0d0 = user  
+api_key_s0d0 = pass  
 
-msg_s0d1 = "This is a test email from SendGrid.com's DMARC tester. The SPF should fail & DKIM should pass."
-api_user_s0d1 = user
-api_key_s0d1 = pass
+msg_s0d1 = "This is a test email from SendGrid.com's DMARC tester. The SPF should fail & DKIM should pass."  
+api_user_s0d1 = user  
+api_key_s0d1 = pass  
 
-msg_s1d0 = "This is a test email from SendGrid.com's DMARC tester. The SPF should pass & DKIM should fail."
-api_user_s1d0 = user
-api_key_s1d0 = pass
+msg_s1d0 = "This is a test email from SendGrid.com's DMARC tester. The SPF should pass & DKIM should fail."  
+api_user_s1d0 = user  
+api_key_s1d0 = pass  
 
-msg_s1d1 = "This is a test email from SendGrid.com's DMARC tester. The SPF & DKIM should pass."
-api_user_s1d1 = user
-api_key_s1d1 = pass
+msg_s1d1 = "This is a test email from SendGrid.com's DMARC tester. The SPF & DKIM should pass."  
+api_user_s1d1 = user  
+api_key_s1d1 = pass  
 
 === end ===
